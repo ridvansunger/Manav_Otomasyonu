@@ -33,27 +33,31 @@ namespace Manav_Otomasyonu
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.grdProducts = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnProduct = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.grdCategories = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnCategory = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.grdCustomers = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnCustomer = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnProduct = new System.Windows.Forms.Button();
-            this.grdProducts = new System.Windows.Forms.DataGridView();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnCustomer = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdProducts)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdCategories)).BeginInit();
             this.panel3.SuspendLayout();
@@ -62,10 +66,6 @@ namespace Manav_Otomasyonu
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).BeginInit();
             this.panel4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdProducts)).BeginInit();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,7 +87,7 @@ namespace Manav_Otomasyonu
             this.label1.ForeColor = System.Drawing.Color.AliceBlue;
             this.label1.Location = new System.Drawing.Point(814, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(481, 56);
+            this.label1.Size = new System.Drawing.Size(385, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manav Otomasyonu";
             // 
@@ -117,6 +117,75 @@ namespace Manav_Otomasyonu
             this.tabPage1.Size = new System.Drawing.Size(1198, 543);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ÜRÜNLER";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.grdProducts);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(268, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(927, 535);
+            this.panel5.TabIndex = 2;
+            // 
+            // grdProducts
+            // 
+            this.grdProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdProducts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.grdProducts.Location = new System.Drawing.Point(0, 0);
+            this.grdProducts.MultiSelect = false;
+            this.grdProducts.Name = "grdProducts";
+            this.grdProducts.RowHeadersWidth = 51;
+            this.grdProducts.RowTemplate.Height = 24;
+            this.grdProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdProducts.Size = new System.Drawing.Size(927, 535);
+            this.grdProducts.TabIndex = 1;
+            this.grdProducts.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProducts_CellDoubleClick);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.Controls.Add(this.groupBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(3, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(265, 535);
+            this.panel2.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.LightBlue;
+            this.groupBox2.Controls.Add(this.btnProduct);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Location = new System.Drawing.Point(15, 131);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(226, 230);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Ürün İşlemleri";
+            // 
+            // btnProduct
+            // 
+            this.btnProduct.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnProduct.Location = new System.Drawing.Point(53, 119);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(124, 68);
+            this.btnProduct.TabIndex = 0;
+            this.btnProduct.Text = "Ürün Tanımlama";
+            this.btnProduct.UseVisualStyleBackColor = true;
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(39, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(149, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Ürün İşlemleri Gidin";
             // 
             // tabPage2
             // 
@@ -169,6 +238,15 @@ namespace Manav_Otomasyonu
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kategori İşlemleri";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(37, 91);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(174, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Kategori İşlemleri Gidin";
             // 
             // btnCategory
             // 
@@ -233,6 +311,15 @@ namespace Manav_Otomasyonu
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Müşteri İşlemleri";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 91);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(168, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Müşteri İşlemleri Gidin";
+            // 
             // btnCustomer
             // 
             this.btnCustomer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -243,93 +330,6 @@ namespace Manav_Otomasyonu
             this.btnCustomer.Text = "Müşteri Tanımı";
             this.btnCustomer.UseVisualStyleBackColor = true;
             this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel2.Controls.Add(this.groupBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(3, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(265, 535);
-            this.panel2.TabIndex = 0;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.LightBlue;
-            this.groupBox2.Controls.Add(this.btnProduct);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(15, 131);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(226, 230);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Ürün İşlemleri";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Ürün İşlemleri Gidin";
-            // 
-            // btnProduct
-            // 
-            this.btnProduct.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnProduct.Location = new System.Drawing.Point(53, 119);
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(124, 68);
-            this.btnProduct.TabIndex = 0;
-            this.btnProduct.Text = "Ürün Tanımlama";
-            this.btnProduct.UseVisualStyleBackColor = true;
-            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
-            // 
-            // grdProducts
-            // 
-            this.grdProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grdProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdProducts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdProducts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.grdProducts.Location = new System.Drawing.Point(0, 0);
-            this.grdProducts.MultiSelect = false;
-            this.grdProducts.Name = "grdProducts";
-            this.grdProducts.RowHeadersWidth = 51;
-            this.grdProducts.RowTemplate.Height = 24;
-            this.grdProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdProducts.Size = new System.Drawing.Size(927, 535);
-            this.grdProducts.TabIndex = 1;
-            this.grdProducts.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProducts_CellDoubleClick);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.grdProducts);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(268, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(927, 535);
-            this.panel5.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 91);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Kategori İşlemleri Gidin";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 91);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Müşteri İşlemleri Gidin";
             // 
             // Form1
             // 
@@ -342,12 +342,17 @@ namespace Manav_Otomasyonu
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Manavcınız";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grdProducts)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdCategories)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -358,11 +363,6 @@ namespace Manav_Otomasyonu
             this.panel4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdProducts)).EndInit();
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

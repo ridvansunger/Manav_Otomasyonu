@@ -204,7 +204,7 @@ namespace Manav_Otomasyonu
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CustomerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CustomerForm";
+            this.Text = "Müşteri Formu";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

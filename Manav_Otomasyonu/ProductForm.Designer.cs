@@ -89,6 +89,7 @@ namespace Manav_Otomasyonu
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
@@ -231,7 +232,7 @@ namespace Manav_Otomasyonu
             this.label8.Font = new System.Drawing.Font("Calisto MT", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(53, 29);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(296, 48);
+            this.label8.Size = new System.Drawing.Size(237, 38);
             this.label8.TabIndex = 13;
             this.label8.Text = "Ürün İşlemleri";
             // 
@@ -248,7 +249,7 @@ namespace Manav_Otomasyonu
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ProductForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ProductForm";
+            this.Text = "Ürün Formu";
             this.Load += new System.EventHandler(this.ProductForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

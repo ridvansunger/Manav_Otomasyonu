@@ -163,7 +163,11 @@ namespace Manav_Otomasyonu
                 
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+      
+
+
+
+        private void DeleteProduct()
         {
             try
             {
@@ -171,12 +175,12 @@ namespace Manav_Otomasyonu
                 if (id > 0)
                 {
                     var result = Utilities.ShowDialogResultInformationMessage(ContsMessages.RecordDeleteQuestionMessage);
-                    if(result==DialogResult.OK)
+                    if (result == DialogResult.OK)
                     {
                         productRepo.Delete(id);
                         Utilities.ShowSuccessMessage(ContsMessages.RecordDeleteSuccessMessage);
                     }
-              
+
                 }
             }
             catch (Exception ex)
@@ -187,6 +191,9 @@ namespace Manav_Otomasyonu
             }
         }
 
-    
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DeleteProduct();
+        }
     }
 }

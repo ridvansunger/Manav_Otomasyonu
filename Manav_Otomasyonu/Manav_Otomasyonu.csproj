@@ -83,6 +83,9 @@
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\ProductRepo.cs" />
     <Compile Include="Repository\RepositoryBase.cs" />
+    <Compile Include="VM\VMCategory.cs" />
+    <Compile Include="VM\VMCustomer.cs" />
+    <Compile Include="VM\VMProduct.cs" />
     <EmbeddedResource Include="CategoryForm.resx">
       <DependentUpon>CategoryForm.cs</DependentUpon>
     </EmbeddedResource>
